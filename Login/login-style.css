@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 290px;
+}
+
+fieldset {
+    border: 0;
+}
+
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    margin-top: 10px;
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 1px 1px 1px white;
+    display: block;
+    border-radius: 7px;
+}
+
+.grupo {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 510px;
+}
+
+.campo {
+    font-family: sans-serif;
+    color: white;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+#botao {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    position: absolute;
+    border: .1rem solid #d40511;
+    background-color: #d40511;
+    border-radius: .4rem;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    margin-top: 60px;
+    margin-left: 65px;
+}
+  
+#botao:hover, #botao:focus {
+    transform: translateY(-3px);
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+}

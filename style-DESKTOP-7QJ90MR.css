@@ -1,0 +1,2670 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: 45px;
+}
+
+ul, li {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    background-color: black;
+    color: #333;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+ul, li, a:hover {
+    color: #a09999;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#lu {
+    margin-left: 40px;
+    position: relative;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#lu:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #cf1c25;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+#lu:hover {
+    color: #95a5a6;
+}
+
+#lu:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#entrar {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 23px;
+    font-size: 14px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    text-decoration: none;
+    
+}
+  
+#botao {
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 7px;
+    border: .1rem solid #d40511;
+    background-color: #d40511;
+    border-radius: .4rem;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+  
+#botao:hover, #botao:focus {
+    transform: translateY(-3px);
+}
+
+.submenu ul ul {
+    margin-left: 625px;
+    margin-top: 100px;
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 180px;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.submenu li:hover ul {
+    display: inline-block;
+}
+
+#sub1, #sub2, #sub3, #sub4, #sub5 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#sub1::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -10px;
+    width: 3px;
+    height: 110%;
+    background: #cf1c25;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+#sub1:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#sub2::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -10px;
+    width: 3px;
+    height: 120%;
+    background: #cf1c25;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+#sub2:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#sub3::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -10px;
+    width: 3px;
+    height: 120%;
+    background: #cf1c25;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+#sub3:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#sub4::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -10px;
+    width: 3px;
+    height: 120%;
+    background: #cf1c25;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+#sub4:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#sub5::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -10px;
+    width: 3px;
+    height: 120%;
+    background: #cf1c25;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+#sub5:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.publicidade {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em 0.1em black;
+    margin-top: -140px;
+    margin-left: 48px;
+    font-size: 45px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    color: rgb(197, 195, 195);
+    text-shadow: 0.1em 0.1em 0.1em black;
+    margin-top: -70px;
+    margin-left: 48px;
+    font-size: 18px;
+} 
+
+/* LANÇAMENTOS */
+
+#seta01, #seta02, #seta03, #seta04, #seta05, #seta06, #seta07, #seta08{
+    position: absolute;
+    padding: 6px;
+    box-shadow: 2px -2px 0 1px white inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(225deg);
+    margin-left: 130px;
+    margin-top: -32px;
+}
+
+#seta03 {
+    margin-left: 70px;
+}
+
+#seta04 {
+    margin-left: 100px;
+}
+
+#seta05 {
+    margin-left: 60px;
+}
+
+#seta06 {
+    margin-left: 95px;
+}
+
+#seta07 {
+    margin-left: 90px;
+}
+
+#seta08 {
+    margin-left: 80px;
+}
+
+.caixaImg01 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao01 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg01:hover .sobreposicao01 {
+    opacity: 90%;
+}
+
+.class01 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo01 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto01 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg02 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao02 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg02:hover .sobreposicao02 {
+    opacity: 90%;
+}
+
+.class02 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo02 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto02 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg03 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao03 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg03:hover .sobreposicao03 {
+    opacity: 90%;
+}
+
+.class03 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo03 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto03 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 235px;
+    margin-left: 10px;
+}
+
+.caixaImg04 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao04 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg04:hover .sobreposicao04 {
+    opacity: 90%;
+}
+
+.class04 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo04 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto04 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg05 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao05 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg05:hover .sobreposicao05 {
+    opacity: 90%;
+}
+
+.class05 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo05 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto05 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg06 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao06 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg06:hover .sobreposicao06 {
+    opacity: 90%;
+}
+
+.class06 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo06 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto06 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+/* MOTIVACIONAIS */
+
+.caixaImg07 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao07 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg07:hover .sobreposicao07 {
+    opacity: 90%;
+}
+
+.class07 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo07 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto07 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg08 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao08 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg08:hover .sobreposicao08 {
+    opacity: 90%;
+}
+
+.class08 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo08 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 155px;
+    margin-left: 10px;
+}
+
+.texto08 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 224px;
+    margin-left: 10px;
+}
+
+.caixaImg09 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao09 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg09:hover .sobreposicao09 {
+    opacity: 90%;
+}
+
+.class09 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo09 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto09 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg10 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao10 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg10:hover .sobreposicao10 {
+    opacity: 90%;
+}
+
+.class10 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo10 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto10 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg11 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao11 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg11:hover .sobreposicao11 {
+    opacity: 90%;
+}
+
+.class11 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo11 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 155px;
+    margin-left: 10px;
+}
+
+.texto11 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 224px;
+    margin-left: 10px;
+}
+
+.caixaImg12 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao12 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg12:hover .sobreposicao12 {
+    opacity: 90%;
+}
+
+.class12 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo12 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto12 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+/* SÉRIES */
+
+.caixaImg13 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao13 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg13:hover .sobreposicao13 {
+    opacity: 90%;
+}
+
+.class13 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo13 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto13 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg14 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao14 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg14:hover .sobreposicao14 {
+    opacity: 90%;
+}
+
+.class14 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo14 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto14 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg15 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao15 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg15:hover .sobreposicao15 {
+    opacity: 90%;
+}
+
+.class15 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo15 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto15 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg16 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao16 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg16:hover .sobreposicao16 {
+    opacity: 90%;
+}
+
+.class16 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo16 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto16 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg17 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao17 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg17:hover .sobreposicao17 {
+    opacity: 90%;
+}
+
+.class17 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo17 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto17 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg18 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao18 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg18:hover .sobreposicao18 {
+    opacity: 90%;
+}
+
+.class18 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo18 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto18 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+/* ANIMAÇÃO */
+
+.caixaImg19 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao19 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg19:hover .sobreposicao19 {
+    opacity: 90%;
+}
+
+.class19 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo19 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+.texto19 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg20 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao20 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg20:hover .sobreposicao20 {
+    opacity: 90%;
+}
+
+.class20 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo20 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto20 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg21 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao21 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg21:hover .sobreposicao21 {
+    opacity: 90%;
+}
+
+.class21 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo21 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto21 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg22 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao22 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg22:hover .sobreposicao22 {
+    opacity: 90%;
+}
+
+.class22 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo22 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto22 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg23 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao23 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg23:hover .sobreposicao23 {
+    opacity: 90%;
+}
+
+.class23 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo23 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto23 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg24 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao24 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg24:hover .sobreposicao24 {
+    opacity: 90%;
+}
+
+.class24 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo24 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto24 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+/* AÇÃO */
+
+.caixaImg25 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao25 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg25:hover .sobreposicao25 {
+    opacity: 90%;
+}
+
+.class25 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo25 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto25 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg26 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao26 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg26:hover .sobreposicao26 {
+    opacity: 90%;
+}
+
+.class26 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo26 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto26 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg27 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao27 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg27:hover .sobreposicao27 {
+    opacity: 90%;
+}
+
+.class27 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo27 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto27 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg28 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao28 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg28:hover .sobreposicao28 {
+    opacity: 90%;
+}
+
+.class28 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo28 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto28 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg29 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao29 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg29:hover .sobreposicao29 {
+    opacity: 90%;
+}
+
+.class29 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo29 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto29 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg30 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao30 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg30:hover .sobreposicao30 {
+    opacity: 90%;
+}
+
+.class30 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo30 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+.texto30 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+/* ROMANCE */
+
+.caixaImg31 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao31 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg31:hover .sobreposicao31 {
+    opacity: 90%;
+}
+
+.class31 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo31 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto31 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg32 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao32 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg32:hover .sobreposicao32 {
+    opacity: 90%;
+}
+
+.class32 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo32 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+.texto32 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg33 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao33 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg33:hover .sobreposicao33 {
+    opacity: 90%;
+}
+
+.class33 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo33 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto33 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg34 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao34 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg34:hover .sobreposicao34 {
+    opacity: 90%;
+}
+
+.class34 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo34 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+.texto34 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg35 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao35 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg35:hover .sobreposicao35 {
+    opacity: 90%;
+}
+
+.class35 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo35 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto35 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg36 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao36 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg36:hover .sobreposicao36 {
+    opacity: 90%;
+}
+
+.class36 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo36 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto36 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+/* COMÉDIA */
+
+.caixaImg37 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao37 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg37:hover .sobreposicao37 {
+    opacity: 90%;
+}
+
+.class37 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo37 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto37 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg38 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao38 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg38:hover .sobreposicao38 {
+    opacity: 90%;
+}
+
+.class38 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo38 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto38 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg39 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao39 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg39:hover .sobreposicao39 {
+    opacity: 90%;
+}
+
+.class39 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo39 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto39 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg40 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao40 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg40:hover .sobreposicao40 {
+    opacity: 90%;
+}
+
+.class40 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo40 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+.texto40 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg41 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao41 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg41:hover .sobreposicao41 {
+    opacity: 90%;
+}
+
+.class41 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo41 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto41 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg42 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao42 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg42:hover .sobreposicao42 {
+    opacity: 90%;
+}
+
+.class42 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo42 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto42 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+/* ANIMES */
+
+.caixaImg43 {
+    position: absolute;
+    margin-left: 0px;
+}
+
+.sobreposicao43 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg43:hover .sobreposicao43 {
+    opacity: 90%;
+}
+
+.class43 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo43 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto43 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg44 {
+    position: absolute;
+    margin-left: 215px;
+}
+
+.sobreposicao44 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg44:hover .sobreposicao44 {
+    opacity: 90%;
+}
+
+.class44 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo44 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto44 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg45 {
+    position: absolute;
+    margin-left: 430px;
+}
+
+.sobreposicao45 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg45:hover .sobreposicao45 {
+    opacity: 90%;
+}
+
+.class45 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo45 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+.texto45 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg46 {
+    position: absolute;
+    margin-left: 645px;
+}
+
+.sobreposicao46 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg46:hover .sobreposicao46 {
+    opacity: 90%;
+}
+
+.class46 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo46 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto46 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg47 {
+    position: absolute;
+    margin-left: 860px;
+}
+
+.sobreposicao47 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg47:hover .sobreposicao47 {
+    opacity: 90%;
+}
+
+.class47 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo47 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 10px;
+}
+
+.texto47 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+.caixaImg48 {
+    position: absolute;
+    margin-left: 1075px;
+}
+
+.sobreposicao48 {
+    margin-left: 10px;
+    width: 202px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.caixaImg48:hover .sobreposicao48 {
+    opacity: 90%;
+}
+
+.class48 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.titulo48 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.texto48 {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 10px;
+}
+
+#h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#lancamentos {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    font-size: 12px;
+}
+
+.l1, .l2, .l3, .l4, .l5, .l6 {
+    margin-left: 10px;
+}
+
+#h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+
+#motivacionais {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 40px;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    font-size: 12px;
+}
+
+.m1, .m2, .m3, .m4, .m5, .m6 {
+    margin-left: 10px;
+}
+
+#h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#series {
+    position: absolute;
+    margin-left: 40px;
+    position: absolute;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    margin-top: 780px;
+    font-size: 12px;
+}
+
+.s1, .s2, .s3, .s4, .s5, .s6 {
+    margin-left: 10px;
+}
+
+#animacao {
+    position: absolute;
+    margin-left: 40px;
+    position: absolute;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    margin-top: 1160px;
+    font-size: 12px;
+}
+
+.a1, .a2, .a3, .a4, .a5, .a6 {
+    margin-left: 10px;
+}
+
+#h4 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#acao {
+    position: absolute;
+    margin-left: 40px;
+    position: absolute;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    margin-top: 1540px;
+    font-size: 12px;
+}
+
+.ac1, .ac2, .ac3, .ac4, .ac5, .ac6 {
+    margin-left: 10px;
+}
+
+#h5 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#romance {
+    position: absolute;
+    margin-left: 40px;
+    position: absolute;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    margin-top: 1920px;
+    font-size: 12px;
+}
+
+.r1, .r2, .r3, .r4, .r5, .r6 {
+    margin-left: 10px;
+}
+
+#h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#comedia {
+    position: absolute;
+    margin-left: 40px;
+    position: absolute;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    margin-top: 2305px;
+    font-size: 12px;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+    margin-left: 10px;
+}
+
+#h7 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#animes {
+    position: absolute;
+    margin-left: 40px;
+    position: absolute;
+    color: white;
+    text-shadow: 0em 0em 0.10em black;
+    margin-top: 2680px;
+    font-size: 12px;
+}
+
+.an1, .an2, .an3, .an4, .an5, .an6 {
+    margin-left: 10px;
+}
+
+#h8 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+footer {
+    position: absolute;
+    background-color: rgb(53, 50, 50);
+    margin-top: 3100px;
+    height: 45px; 
+    width: 100%;
+}
+
+#h9 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(189, 185, 185);
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
